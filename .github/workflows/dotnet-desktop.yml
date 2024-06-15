@@ -7,11 +7,10 @@ on:
   #   branches: [ "main" ]
 
 jobs:
-
   build:
     strategy:
       matrix:
-        configuration: [Debug, Release]
+        configuration: [Debug]
     runs-on: windows-latest  # For a list of available runner types, refer to
     env:
       Solution_Name: Devops.sln                                 # Replace with your solution name, i.e. MyWpfApp.sln.
